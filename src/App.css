@@ -6,7 +6,7 @@ html{
 
 .app{
     background-color: black;
-    height: 100vh;
+    height: 100%;
     display: grid;
     place-items: center;
   

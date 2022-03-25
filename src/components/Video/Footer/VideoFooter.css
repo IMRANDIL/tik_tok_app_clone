@@ -2,7 +2,38 @@
 
 .videoFooter{
     position: relative;
-    bottom: 50px;
+    bottom: 100px;
     color: white;
+    display: flex;
+    
+
+}
+
+
+
+.videoFooter__text{
+    flex: 1;
+  
+}
+
+
+
+@keyframes App-logo-spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.videoFooter__logo{
+
+animation: App-logo-spin infinite 5s linear;
+height: 50px;
+filter: invert(1);
+
+
+
 
 }
