@@ -6,6 +6,10 @@ html{
 
 .app{
     background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  
 }
 
 .app__videos{
@@ -15,6 +19,8 @@ html{
     width: 80%;
     max-width: 500px;
     scroll-snap-type: y mandatory;
+    border-radius: 20px;
+
 }
 
 

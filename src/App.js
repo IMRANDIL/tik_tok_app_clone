@@ -5,7 +5,6 @@ import Video from './components/Video/Video';
 function App() {
   return (
     <div className="app">
-      tiktok now
 
 
       <div className="app__videos">
