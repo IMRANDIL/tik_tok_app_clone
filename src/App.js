@@ -1,10 +1,16 @@
 
 import './App.css';
+import Video from './components/Video/Video';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       tiktok now
+
+
+      <div className="app__videos">
+        <Video />
+      </div>
     </div>
   );
 }
