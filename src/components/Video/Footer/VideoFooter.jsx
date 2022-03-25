@@ -1,6 +1,6 @@
 import React from 'react'
 import './VideoFooter.css'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import Ticker from 'react-ticker';
 
@@ -9,12 +9,12 @@ import Ticker from 'react-ticker';
 
 
 
-const VideoFooter = () => {
+const VideoFooter = ({ channel, description, song }) => {
     return (
         <div className='videoFooter'>
             <div className="videoFooter__text">
-                <h3>@AliImranAdil</h3>
-                <p>This is a description</p>
+                <h3>@{channel}</h3>
+                <p>{description}</p>
                 <div className="videoFooter__ticker">
                     <MusicNoteIcon className='videoFooter__icon' />
                     <Ticker mode='smooth'>
@@ -23,7 +23,7 @@ const VideoFooter = () => {
                                 <>
 
                                     <p>
-                                        Yo what's up
+                                        {song}
                                     </p>
 
                                 </>

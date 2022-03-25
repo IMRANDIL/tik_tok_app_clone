@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import VideoSidebar from '../VideoSidebar/VideoSidebar';
 import VideoFooter from './Footer/VideoFooter';
 
 import './Video.css'
@@ -35,11 +36,12 @@ const Video = () => {
 
     return (
         <div className='video'>
-            <video className='video__player' onClick={onVideoPress} loop ref={videoRef} src="https://vod-progressive.akamaized.net/exp=1648192187~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2436%2F18%2F462183602%2F2046352575.mp4~hmac=0bbf7a6401db6943a092de8ac4e6fba156e7f2585c7bc4b3b95ee4a623a13a48/vimeo-prod-skyfire-std-us/01/2436/18/462183602/2046352575.mp4?filename=pexels-peter-billington-5454316.mp4" height='100%'></video>
+            <video className='video__player' onClick={onVideoPress} loop ref={videoRef} src="https://vod-progressive.akamaized.net/exp=1648212721~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2812%2F20%2F514062274%2F2380845364.mp4~hmac=e59d82358ab2707044b3551e09d148f6d6f199b5b656641c732cb49e27766824/vimeo-prod-skyfire-std-us/01/2812/20/514062274/2380845364.mp4?filename=pexels-cottonbro-6869572.mp4" height='100%'></video>
 
             {/* Video Footer */}
-            <VideoFooter />
+            <VideoFooter channel='AliImranAdil' description='Checkout this man' song='aasha' />
             {/* Video sidebar */}
+            <VideoSidebar />
         </div>
     )
 }
