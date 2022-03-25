@@ -12,7 +12,15 @@ import './Video.css'
 
 
 
-const Video = () => {
+const Video = ({
+    url,
+    channel,
+    description,
+    song,
+    likes,
+    messages,
+    shares
+}) => {
 
 
     const [play, setPlay] = useState(false);
@@ -36,12 +44,12 @@ const Video = () => {
 
     return (
         <div className='video'>
-            <video className='video__player' onClick={onVideoPress} loop ref={videoRef} src="https://vod-progressive.akamaized.net/exp=1648212721~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2812%2F20%2F514062274%2F2380845364.mp4~hmac=e59d82358ab2707044b3551e09d148f6d6f199b5b656641c732cb49e27766824/vimeo-prod-skyfire-std-us/01/2812/20/514062274/2380845364.mp4?filename=pexels-cottonbro-6869572.mp4" ></video>
+            <video className='video__player' onClick={onVideoPress} loop ref={videoRef} src={url} ></video>
 
             {/* Video Footer */}
-            <VideoFooter channel='AliImranAdil' description='Checkout this man' song='aasha' />
+            <VideoFooter channel={channel} description={description} song={song} />
             {/* Video sidebar */}
-            <VideoSidebar likes={1144} messages={652} shares={300} />
+            <VideoSidebar likes={likes} messages={messages} shares={shares} />
         </div>
     )
 }
