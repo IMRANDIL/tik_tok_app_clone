@@ -15,23 +15,26 @@ const VideoFooter = () => {
             <div className="videoFooter__text">
                 <h3>@AliImranAdil</h3>
                 <p>This is a description</p>
-                <MusicNoteIcon />
-                <Ticker mode='smooth'>
-                    {
-                        ({ index }) => (
-                            <>
+                <div className="videoFooter__ticker">
+                    <MusicNoteIcon className='videoFooter__icon' />
+                    <Ticker mode='smooth'>
+                        {
+                            ({ index }) => (
+                                <>
 
-                                <h1>
-                                    Yo what's up
-                                </h1>
+                                    <p>
+                                        Yo what's up
+                                    </p>
 
-                            </>
-                        )
+                                </>
+                            )
 
 
 
-                    }
-                </Ticker>
+                        }
+                    </Ticker>
+                </div>
+
             </div>
             <img className='videoFooter__logo' src="https://static.thenounproject.com/png/934821-200.png" alt="" />
         </div>
