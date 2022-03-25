@@ -14,7 +14,7 @@ html{
 
 .app__videos{
     position: relative;
-    height: 800px;
+    height: 95%;
     overflow: scroll;
     width: 80%;
     max-width: 500px;
